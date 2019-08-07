@@ -65,7 +65,7 @@ if __name__ == '__main__':
   imReference = cv2.imread(refFilename, cv2.IMREAD_COLOR)
  
   # Read image to be aligned
-  imFilename = "shell.png"
+  imFilename = "score.png"
   print("Reading image to align : ", imFilename);  
   im = cv2.imread(imFilename, cv2.IMREAD_COLOR)
    

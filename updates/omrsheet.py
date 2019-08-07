@@ -11,13 +11,9 @@ import numpy as np
 from PIL import Image
 import cv2
 
+img=cv2.imread("full_fill.png",0)
 
-
-# Load and convert image to matrix
-im = Image.open("full_fill.png")
-img = np.asarray(im.convert('L'))
-
-width, height = im.size
+width, height  = img.shape
 
 
 # Create an algorithm to detect left most point
@@ -27,7 +23,8 @@ leftX = 55
 offsetX = 915
 offsetY = 1256
 
-
+cv2.imshow("image",img[0:10, 80:100])
+cv2.waitKey(0)
 #crop_img = im[100:200, 100:300].copy()
 #cv2.imshow("image",crop_img)
 #cv2.waitKey(0)
