@@ -21,7 +21,7 @@ count =0
 for y in range(0, binary.shape[0],100):
    column = binary[4:binary.shape[1], y: y + 95]    
    cv2.imshow("image",column)
-   cv2.waitKey(1)
+   cv2.waitKey(0)
    
    for x in range(0, column.shape[0],16):
         row = column[x:x+10,:]
